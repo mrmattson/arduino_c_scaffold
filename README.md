@@ -36,10 +36,10 @@ PATH' is checked.
 WinAVR contains all the tools you need to use this scaffolding including (but
 not limited to):
 
-* AVR GNU Binutils
 * AVR GNU Compiler Collection (GCC)
-* AVRDUDE
+* AVR GNU Binutils
 * avr-libc
+* AVRDUDE
 
 In order to complete the next step, you'll need to download the Arduino
 software package this can be found on the [Arduino download page][adp].
@@ -59,11 +59,9 @@ it setup on your Mac.
 Once you're ready, here are the commands to install the needed tools:
 
 ```bash
-$ brew install avrdude
-$ brew tap larsimmisch/avr
-$ brew install avr-binutils
+$ brew tap osx-cross/avr
 $ brew install avr-gcc
-$ brew install avr-libc
+$ brew install avrdude
 ```
 
 **These are built from source and will take a while to complete.**
@@ -153,7 +151,7 @@ TBD
 
 ### OSX
 
-TBD
+Open the Arduino Desktop IDE. In the Tools menu, copy down the port. Example: ```/dev/cu.usbmodem1421201```.
 
 ### Linux
 
